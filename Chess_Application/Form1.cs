@@ -66,12 +66,61 @@ namespace Chess_Application
         private void btnLoginEnter_Click(object sender, EventArgs e)
         {
             pnlLogin.Visible = false;
+            pnlStatistics.Visible = false;
+            pnlNewUser.Visible = false;
+            pnlChessBoard.Visible = false; 
             pnlMenu.Visible = true;
         }
 
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            pnlMenu.Visible = true;
+            pnlStatistics.Visible = false; 
+        }
+
+        private void llLoginSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+            pnlLogin.Visible = false; 
+            pnlNewUser.Visible = true;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pnlNewUser.Visible = false;
+            pnlLogin.Visible = true; 
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNewUserRegister_Click(object sender, EventArgs e)
+        {
+            pnlLogin.Visible = true;
+            pnlNewUser.Visible = false; 
+        }
+
+        private void btnMenuLogOut_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Are you sure you want to log out?","Log Out", MessageBoxButtons.YesNoCancel,MessageBoxIcon.Exclamation);            
+        }
+
+        private void btnStats_Click(object sender, EventArgs e)
+        {
+            pnlStatistics.Visible = true;
+            pnlMenu.Visible = false; 
         }
     }
 }

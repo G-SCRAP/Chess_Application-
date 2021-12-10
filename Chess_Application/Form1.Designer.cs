@@ -36,17 +36,17 @@ namespace Chess_Application
             this.btnSecondPlayer = new System.Windows.Forms.Button();
             this.pnlMenuHighlightbtn = new System.Windows.Forms.Panel();
             this.pnlLogin = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.pnlNewUser = new System.Windows.Forms.Panel();
+            this.lblNewUserPassword = new System.Windows.Forms.Label();
+            this.lblNewUserUsername = new System.Windows.Forms.Label();
+            this.lblNewUserLastName = new System.Windows.Forms.Label();
+            this.lblNewUserFirstName = new System.Windows.Forms.Label();
+            this.txtNewUserUsername = new System.Windows.Forms.TextBox();
+            this.txtNewUserFname = new System.Windows.Forms.TextBox();
+            this.txtNewUserPassword = new System.Windows.Forms.TextBox();
+            this.txtNewUserLname = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.grbLoginLogin = new System.Windows.Forms.GroupBox();
             this.llLoginSignUp = new System.Windows.Forms.LinkLabel();
             this.btnLoginEnter = new System.Windows.Forms.Button();
             this.grbLoginPassword = new System.Windows.Forms.GroupBox();
@@ -59,11 +59,18 @@ namespace Chess_Application
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pnlChessBoard = new System.Windows.Forms.Panel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.grbNewUserRegister = new System.Windows.Forms.GroupBox();
+            this.btnNewUserRegister = new System.Windows.Forms.Button();
+            this.btnNewUserCancel = new System.Windows.Forms.Button();
+            this.btnMenuLogOut = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlLogin.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.pnlNewUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.grbLoginLogin.SuspendLayout();
             this.grbLoginPassword.SuspendLayout();
             this.grbLoginUsername.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -72,6 +79,7 @@ namespace Chess_Application
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlChessBoard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.grbNewUserRegister.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -89,11 +97,12 @@ namespace Chess_Application
             // 
             this.btnFirstPlayer.BackColor = System.Drawing.Color.DimGray;
             this.btnFirstPlayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFirstPlayer.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFirstPlayer.Location = new System.Drawing.Point(57, 283);
             this.btnFirstPlayer.Name = "btnFirstPlayer";
             this.btnFirstPlayer.Size = new System.Drawing.Size(89, 49);
-            this.btnFirstPlayer.TabIndex = 1;
-            this.btnFirstPlayer.Text = "1 Player";
+            this.btnFirstPlayer.TabIndex = 0;
+            this.btnFirstPlayer.Text = "&1 Player";
             this.btnFirstPlayer.UseVisualStyleBackColor = false;
             this.btnFirstPlayer.Click += new System.EventHandler(this.btnFirstPlayer_Click);
             // 
@@ -101,22 +110,25 @@ namespace Chess_Application
             // 
             this.btnStats.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnStats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStats.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStats.Location = new System.Drawing.Point(194, 283);
             this.btnStats.Name = "btnStats";
             this.btnStats.Size = new System.Drawing.Size(89, 49);
-            this.btnStats.TabIndex = 2;
-            this.btnStats.Text = "Stats";
+            this.btnStats.TabIndex = 1;
+            this.btnStats.Text = "&Stats";
             this.btnStats.UseVisualStyleBackColor = false;
+            this.btnStats.Click += new System.EventHandler(this.btnStats_Click);
             // 
             // btnSecondPlayer
             // 
             this.btnSecondPlayer.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btnSecondPlayer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSecondPlayer.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSecondPlayer.Location = new System.Drawing.Point(325, 283);
             this.btnSecondPlayer.Name = "btnSecondPlayer";
             this.btnSecondPlayer.Size = new System.Drawing.Size(89, 49);
-            this.btnSecondPlayer.TabIndex = 3;
-            this.btnSecondPlayer.Text = "2 Player";
+            this.btnSecondPlayer.TabIndex = 2;
+            this.btnSecondPlayer.Text = "&2 Player";
             this.btnSecondPlayer.UseVisualStyleBackColor = false;
             // 
             // pnlMenuHighlightbtn
@@ -129,8 +141,7 @@ namespace Chess_Application
             // 
             // pnlLogin
             // 
-            this.pnlLogin.Controls.Add(this.panel1);
-            this.pnlLogin.Controls.Add(this.groupBox2);
+            this.pnlLogin.Controls.Add(this.grbLoginLogin);
             this.pnlLogin.Controls.Add(this.pictureBox2);
             this.pnlLogin.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlLogin.Location = new System.Drawing.Point(0, 0);
@@ -138,87 +149,83 @@ namespace Chess_Application
             this.pnlLogin.Size = new System.Drawing.Size(479, 479);
             this.pnlLogin.TabIndex = 0;
             // 
-            // panel1
+            // pnlNewUser
             // 
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.pictureBox5);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(479, 479);
-            this.panel1.TabIndex = 1;
+            this.pnlNewUser.Controls.Add(this.grbNewUserRegister);
+            this.pnlNewUser.Controls.Add(this.pictureBox5);
+            this.pnlNewUser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlNewUser.Location = new System.Drawing.Point(0, 0);
+            this.pnlNewUser.Name = "pnlNewUser";
+            this.pnlNewUser.Size = new System.Drawing.Size(479, 479);
+            this.pnlNewUser.TabIndex = 1;
             // 
-            // label4
+            // lblNewUserPassword
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(175, 363);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "label4";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.lblNewUserPassword.AutoSize = true;
+            this.lblNewUserPassword.Location = new System.Drawing.Point(53, 150);
+            this.lblNewUserPassword.Name = "lblNewUserPassword";
+            this.lblNewUserPassword.Size = new System.Drawing.Size(53, 13);
+            this.lblNewUserPassword.TabIndex = 8;
+            this.lblNewUserPassword.Text = "Password";
+            this.lblNewUserPassword.Click += new System.EventHandler(this.label4_Click);
             // 
-            // label3
+            // lblNewUserUsername
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(175, 323);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "label3";
+            this.lblNewUserUsername.AutoSize = true;
+            this.lblNewUserUsername.Location = new System.Drawing.Point(53, 111);
+            this.lblNewUserUsername.Name = "lblNewUserUsername";
+            this.lblNewUserUsername.Size = new System.Drawing.Size(55, 13);
+            this.lblNewUserUsername.TabIndex = 7;
+            this.lblNewUserUsername.Text = "Username";
             // 
-            // label2
+            // lblNewUserLastName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(175, 283);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "label2";
+            this.lblNewUserLastName.AutoSize = true;
+            this.lblNewUserLastName.BackColor = System.Drawing.Color.Silver;
+            this.lblNewUserLastName.Location = new System.Drawing.Point(50, 74);
+            this.lblNewUserLastName.Name = "lblNewUserLastName";
+            this.lblNewUserLastName.Size = new System.Drawing.Size(58, 13);
+            this.lblNewUserLastName.TabIndex = 6;
+            this.lblNewUserLastName.Text = "Last Name";
             // 
-            // label1
+            // lblNewUserFirstName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(175, 243);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Name";
+            this.lblNewUserFirstName.AutoSize = true;
+            this.lblNewUserFirstName.BackColor = System.Drawing.Color.Transparent;
+            this.lblNewUserFirstName.Location = new System.Drawing.Point(51, 34);
+            this.lblNewUserFirstName.Name = "lblNewUserFirstName";
+            this.lblNewUserFirstName.Size = new System.Drawing.Size(57, 13);
+            this.lblNewUserFirstName.TabIndex = 5;
+            this.lblNewUserFirstName.Text = "First Name";
             // 
-            // textBox4
+            // txtNewUserUsername
             // 
-            this.textBox4.Location = new System.Drawing.Point(220, 320);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 3;
+            this.txtNewUserUsername.Location = new System.Drawing.Point(118, 108);
+            this.txtNewUserUsername.Name = "txtNewUserUsername";
+            this.txtNewUserUsername.Size = new System.Drawing.Size(100, 20);
+            this.txtNewUserUsername.TabIndex = 2;
             // 
-            // textBox3
+            // txtNewUserFname
             // 
-            this.textBox3.Location = new System.Drawing.Point(220, 240);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.txtNewUserFname.Location = new System.Drawing.Point(118, 34);
+            this.txtNewUserFname.Name = "txtNewUserFname";
+            this.txtNewUserFname.Size = new System.Drawing.Size(100, 20);
+            this.txtNewUserFname.TabIndex = 0;
+            this.txtNewUserFname.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
-            // textBox2
+            // txtNewUserPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(220, 360);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtNewUserPassword.Location = new System.Drawing.Point(118, 147);
+            this.txtNewUserPassword.Name = "txtNewUserPassword";
+            this.txtNewUserPassword.Size = new System.Drawing.Size(100, 20);
+            this.txtNewUserPassword.TabIndex = 3;
             // 
-            // textBox1
+            // txtNewUserLname
             // 
-            this.textBox1.Location = new System.Drawing.Point(220, 280);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtNewUserLname.Location = new System.Drawing.Point(118, 74);
+            this.txtNewUserLname.Name = "txtNewUserLname";
+            this.txtNewUserLname.Size = new System.Drawing.Size(100, 20);
+            this.txtNewUserLname.TabIndex = 1;
             // 
             // pictureBox5
             // 
@@ -229,20 +236,21 @@ namespace Chess_Application
             this.pictureBox5.Size = new System.Drawing.Size(479, 479);
             this.pictureBox5.TabIndex = 4;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // groupBox2
+            // grbLoginLogin
             // 
-            this.groupBox2.Controls.Add(this.llLoginSignUp);
-            this.groupBox2.Controls.Add(this.btnLoginEnter);
-            this.groupBox2.Controls.Add(this.grbLoginPassword);
-            this.groupBox2.Controls.Add(this.grbLoginUsername);
-            this.groupBox2.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(55, 72);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(357, 330);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Login";
+            this.grbLoginLogin.Controls.Add(this.llLoginSignUp);
+            this.grbLoginLogin.Controls.Add(this.btnLoginEnter);
+            this.grbLoginLogin.Controls.Add(this.grbLoginPassword);
+            this.grbLoginLogin.Controls.Add(this.grbLoginUsername);
+            this.grbLoginLogin.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbLoginLogin.Location = new System.Drawing.Point(55, 72);
+            this.grbLoginLogin.Name = "grbLoginLogin";
+            this.grbLoginLogin.Size = new System.Drawing.Size(357, 330);
+            this.grbLoginLogin.TabIndex = 2;
+            this.grbLoginLogin.TabStop = false;
+            this.grbLoginLogin.Text = "Login";
             // 
             // llLoginSignUp
             // 
@@ -253,7 +261,8 @@ namespace Chess_Application
             this.llLoginSignUp.Size = new System.Drawing.Size(66, 15);
             this.llLoginSignUp.TabIndex = 2;
             this.llLoginSignUp.TabStop = true;
-            this.llLoginSignUp.Text = "Sign Up!";
+            this.llLoginSignUp.Text = "&Sign Up!";
+            this.llLoginSignUp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llLoginSignUp_LinkClicked);
             // 
             // btnLoginEnter
             // 
@@ -263,7 +272,7 @@ namespace Chess_Application
             this.btnLoginEnter.Name = "btnLoginEnter";
             this.btnLoginEnter.Size = new System.Drawing.Size(97, 40);
             this.btnLoginEnter.TabIndex = 4;
-            this.btnLoginEnter.Text = "Enter";
+            this.btnLoginEnter.Text = "&Enter";
             this.btnLoginEnter.UseVisualStyleBackColor = false;
             this.btnLoginEnter.Click += new System.EventHandler(this.btnLoginEnter_Click);
             // 
@@ -322,7 +331,7 @@ namespace Chess_Application
             // 
             // pnlMenu
             // 
-            this.pnlMenu.Controls.Add(this.pnlStatistics);
+            this.pnlMenu.Controls.Add(this.btnMenuLogOut);
             this.pnlMenu.Controls.Add(this.btnStats);
             this.pnlMenu.Controls.Add(this.btnFirstPlayer);
             this.pnlMenu.Controls.Add(this.btnSecondPlayer);
@@ -335,6 +344,7 @@ namespace Chess_Application
             // 
             // pnlStatistics
             // 
+            this.pnlStatistics.Controls.Add(this.btnBack);
             this.pnlStatistics.Controls.Add(this.pictureBox4);
             this.pnlStatistics.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlStatistics.Location = new System.Drawing.Point(0, 0);
@@ -354,6 +364,8 @@ namespace Chess_Application
             // 
             // pnlChessBoard
             // 
+            this.pnlChessBoard.Controls.Add(this.button2);
+            this.pnlChessBoard.Controls.Add(this.button1);
             this.pnlChessBoard.Controls.Add(this.pictureBox3);
             this.pnlChessBoard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlChessBoard.Location = new System.Drawing.Point(0, 0);
@@ -371,24 +383,114 @@ namespace Chess_Application
             this.pictureBox3.TabIndex = 0;
             this.pictureBox3.TabStop = false;
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.Maroon;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.Location = new System.Drawing.Point(173, 386);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(110, 58);
+            this.btnBack.TabIndex = 1;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // grbNewUserRegister
+            // 
+            this.grbNewUserRegister.Controls.Add(this.btnNewUserCancel);
+            this.grbNewUserRegister.Controls.Add(this.btnNewUserRegister);
+            this.grbNewUserRegister.Controls.Add(this.lblNewUserPassword);
+            this.grbNewUserRegister.Controls.Add(this.txtNewUserPassword);
+            this.grbNewUserRegister.Controls.Add(this.txtNewUserUsername);
+            this.grbNewUserRegister.Controls.Add(this.lblNewUserUsername);
+            this.grbNewUserRegister.Controls.Add(this.txtNewUserFname);
+            this.grbNewUserRegister.Controls.Add(this.txtNewUserLname);
+            this.grbNewUserRegister.Controls.Add(this.lblNewUserLastName);
+            this.grbNewUserRegister.Controls.Add(this.lblNewUserFirstName);
+            this.grbNewUserRegister.Location = new System.Drawing.Point(106, 210);
+            this.grbNewUserRegister.Name = "grbNewUserRegister";
+            this.grbNewUserRegister.Size = new System.Drawing.Size(257, 246);
+            this.grbNewUserRegister.TabIndex = 9;
+            this.grbNewUserRegister.TabStop = false;
+            this.grbNewUserRegister.Text = "Register";
+            // 
+            // btnNewUserRegister
+            // 
+            this.btnNewUserRegister.BackColor = System.Drawing.Color.Gold;
+            this.btnNewUserRegister.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewUserRegister.Location = new System.Drawing.Point(138, 200);
+            this.btnNewUserRegister.Name = "btnNewUserRegister";
+            this.btnNewUserRegister.Size = new System.Drawing.Size(113, 40);
+            this.btnNewUserRegister.TabIndex = 10;
+            this.btnNewUserRegister.Text = "Register";
+            this.btnNewUserRegister.UseVisualStyleBackColor = false;
+            this.btnNewUserRegister.Click += new System.EventHandler(this.btnNewUserRegister_Click);
+            // 
+            // btnNewUserCancel
+            // 
+            this.btnNewUserCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnNewUserCancel.Font = new System.Drawing.Font("Showcard Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewUserCancel.Location = new System.Drawing.Point(6, 200);
+            this.btnNewUserCancel.Name = "btnNewUserCancel";
+            this.btnNewUserCancel.Size = new System.Drawing.Size(113, 40);
+            this.btnNewUserCancel.TabIndex = 11;
+            this.btnNewUserCancel.Text = "Cancel";
+            this.btnNewUserCancel.UseVisualStyleBackColor = false;
+            this.btnNewUserCancel.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnMenuLogOut
+            // 
+            this.btnMenuLogOut.BackColor = System.Drawing.Color.Red;
+            this.btnMenuLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenuLogOut.Location = new System.Drawing.Point(389, 440);
+            this.btnMenuLogOut.Name = "btnMenuLogOut";
+            this.btnMenuLogOut.Size = new System.Drawing.Size(87, 36);
+            this.btnMenuLogOut.TabIndex = 3;
+            this.btnMenuLogOut.Text = "&Log Out";
+            this.btnMenuLogOut.UseVisualStyleBackColor = false;
+            this.btnMenuLogOut.Click += new System.EventHandler(this.btnMenuLogOut_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(0, 421);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(58, 58);
+            this.button1.TabIndex = 2;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(61, 361);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(58, 58);
+            this.button2.TabIndex = 3;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(479, 479);
+            this.Controls.Add(this.pnlChessBoard);
             this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlMenu);
-            this.Controls.Add(this.pnlChessBoard);
+            this.Controls.Add(this.pnlNewUser);
+            this.Controls.Add(this.pnlStatistics);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Chess";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlLogin.ResumeLayout(false);
             this.pnlLogin.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlNewUser.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.grbLoginLogin.ResumeLayout(false);
+            this.grbLoginLogin.PerformLayout();
             this.grbLoginPassword.ResumeLayout(false);
             this.grbLoginPassword.PerformLayout();
             this.grbLoginUsername.ResumeLayout(false);
@@ -400,6 +502,8 @@ namespace Chess_Application
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlChessBoard.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.grbNewUserRegister.ResumeLayout(false);
+            this.grbNewUserRegister.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -415,7 +519,7 @@ namespace Chess_Application
         private System.Windows.Forms.GroupBox grbLoginUsername;
         private System.Windows.Forms.TextBox txtLoginUsername;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox grbLoginLogin;
         private System.Windows.Forms.GroupBox grbLoginPassword;
         private System.Windows.Forms.TextBox txtLoginPassword;
         private System.Windows.Forms.Button btnLoginEnter;
@@ -425,16 +529,23 @@ namespace Chess_Application
         private System.Windows.Forms.Panel pnlStatistics;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.LinkLabel llLoginSignUp;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel pnlNewUser;
+        private System.Windows.Forms.Label lblNewUserPassword;
+        private System.Windows.Forms.Label lblNewUserUsername;
+        private System.Windows.Forms.Label lblNewUserLastName;
+        private System.Windows.Forms.Label lblNewUserFirstName;
+        private System.Windows.Forms.TextBox txtNewUserUsername;
+        private System.Windows.Forms.TextBox txtNewUserFname;
+        private System.Windows.Forms.TextBox txtNewUserPassword;
+        private System.Windows.Forms.TextBox txtNewUserLname;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.GroupBox grbNewUserRegister;
+        private System.Windows.Forms.Button btnNewUserCancel;
+        private System.Windows.Forms.Button btnNewUserRegister;
+        private System.Windows.Forms.Button btnMenuLogOut;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
