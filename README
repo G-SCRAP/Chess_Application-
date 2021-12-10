@@ -1,0 +1,18 @@
+Gavin Ogren
+Friday Decemeber 10th 
+Chess Game
+
+
+This Chess game is your traditional chess game that everyone loves. 
+
+The chess game will incoperate: 
+
+Each Peice will have its own class. 
+This Chess Game is going incoperate things like inheritence to other board peices. 
+It it also going to check for invalid moves so that people cannot make illegal moves
+A undo move. 
+A method that will check if someone is in check 
+A method that will end game once someone is in checkmate. 
+GitHub will be setup for this project
+User database using SQL
+Designed pictures by me using MAC OS Pixelmator
