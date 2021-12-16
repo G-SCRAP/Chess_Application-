@@ -80,5 +80,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChessBoardModel3\ChessBoardModel3.csproj">
+      <Project>{84C96CE9-2D4C-49D5-9A52-056AAD605B1F}</Project>
+      <Name>ChessBoardModel3</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
