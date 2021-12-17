@@ -1055,6 +1055,11 @@ namespace ChessBoardModel3
                     break;
                 case "WP":
 
+                    if (SquareNum == 47 || SquareNum == 48 || SquareNum == 49 || SquareNum == 50 || SquareNum == 51 || SquareNum == 52 || SquareNum == 53 || SquareNum == 54 || SquareNum == 55 || SquareNum == 56)
+                    {
+                        theGrid[SquareNum - 16].LegalNextMove = true;
+                    }
+
    
                     if (SquareNum - 8 < 64)
                     {

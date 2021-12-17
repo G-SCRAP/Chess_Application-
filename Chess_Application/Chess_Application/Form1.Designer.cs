@@ -230,7 +230,7 @@ namespace Chess_Application
             this.llLoginSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llLoginSignUp.Location = new System.Drawing.Point(120, 211);
             this.llLoginSignUp.Name = "llLoginSignUp";
-            this.llLoginSignUp.Size = new System.Drawing.Size(66, 16);
+            this.llLoginSignUp.Size = new System.Drawing.Size(67, 16);
             this.llLoginSignUp.TabIndex = 2;
             this.llLoginSignUp.TabStop = true;
             this.llLoginSignUp.Text = "&Sign Up!";
@@ -1337,11 +1337,11 @@ namespace Chess_Application
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(479, 479);
-            this.Controls.Add(this.pnlChessBoard);
-            this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlNewUser);
+            this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlStatistics);
+            this.Controls.Add(this.pnlChessBoard);
             this.Name = "Form1";
             this.Text = "Chess";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

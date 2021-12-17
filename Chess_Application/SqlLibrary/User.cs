@@ -1,5 +1,5 @@
 ﻿using System;
-using ChessBoardModel3; 
+using ChessBoardModel3;
 using System.Collections.Generic;
 using System.Text;
 
