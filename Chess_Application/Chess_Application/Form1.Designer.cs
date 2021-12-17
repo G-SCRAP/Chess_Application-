@@ -230,7 +230,7 @@ namespace Chess_Application
             this.llLoginSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.llLoginSignUp.Location = new System.Drawing.Point(120, 211);
             this.llLoginSignUp.Name = "llLoginSignUp";
-            this.llLoginSignUp.Size = new System.Drawing.Size(67, 16);
+            this.llLoginSignUp.Size = new System.Drawing.Size(66, 16);
             this.llLoginSignUp.TabIndex = 2;
             this.llLoginSignUp.TabStop = true;
             this.llLoginSignUp.Text = "&Sign Up!";
@@ -578,7 +578,7 @@ namespace Chess_Application
             // btn04
             // 
             this.btn04.BackColor = System.Drawing.Color.Black;
-            this.btn04.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn04.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn04.Image = ((System.Drawing.Image)(resources.GetObject("btn04.Image")));
             this.btn04.Location = new System.Drawing.Point(241, 1);
             this.btn04.Name = "btn04";
@@ -591,7 +591,7 @@ namespace Chess_Application
             // btn02
             // 
             this.btn02.BackColor = System.Drawing.Color.Black;
-            this.btn02.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn02.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn02.Image = ((System.Drawing.Image)(resources.GetObject("btn02.Image")));
             this.btn02.Location = new System.Drawing.Point(121, 1);
             this.btn02.Name = "btn02";
@@ -616,7 +616,7 @@ namespace Chess_Application
             // btn06
             // 
             this.btn06.BackColor = System.Drawing.Color.Black;
-            this.btn06.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn06.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn06.Image = ((System.Drawing.Image)(resources.GetObject("btn06.Image")));
             this.btn06.Location = new System.Drawing.Point(361, 1);
             this.btn06.Name = "btn06";
@@ -653,7 +653,7 @@ namespace Chess_Application
             // btn00
             // 
             this.btn00.BackColor = System.Drawing.Color.Black;
-            this.btn00.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn00.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn00.Image = ((System.Drawing.Image)(resources.GetObject("btn00.Image")));
             this.btn00.Location = new System.Drawing.Point(1, 1);
             this.btn00.Name = "btn00";
@@ -667,7 +667,7 @@ namespace Chess_Application
             // 
             this.btn17.BackColor = System.Drawing.Color.Black;
             this.btn17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn17.BackgroundImage")));
-            this.btn17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn17.Image = ((System.Drawing.Image)(resources.GetObject("btn17.Image")));
             this.btn17.Location = new System.Drawing.Point(421, 61);
             this.btn17.Name = "btn17";
@@ -694,7 +694,7 @@ namespace Chess_Application
             // 
             this.btn15.BackColor = System.Drawing.Color.Black;
             this.btn15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn15.BackgroundImage")));
-            this.btn15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn15.Image = ((System.Drawing.Image)(resources.GetObject("btn15.Image")));
             this.btn15.Location = new System.Drawing.Point(301, 61);
             this.btn15.Name = "btn15";
@@ -721,7 +721,7 @@ namespace Chess_Application
             // 
             this.btn13.BackColor = System.Drawing.Color.Black;
             this.btn13.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn13.BackgroundImage")));
-            this.btn13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn13.Image = ((System.Drawing.Image)(resources.GetObject("btn13.Image")));
             this.btn13.Location = new System.Drawing.Point(181, 61);
             this.btn13.Name = "btn13";
@@ -748,7 +748,7 @@ namespace Chess_Application
             // 
             this.btn11.BackColor = System.Drawing.Color.Black;
             this.btn11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn11.BackgroundImage")));
-            this.btn11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn11.Image = ((System.Drawing.Image)(resources.GetObject("btn11.Image")));
             this.btn11.Location = new System.Drawing.Point(61, 61);
             this.btn11.Name = "btn11";
@@ -773,7 +773,7 @@ namespace Chess_Application
             // btn20
             // 
             this.btn20.BackColor = System.Drawing.Color.Black;
-            this.btn20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn20.Location = new System.Drawing.Point(0, 121);
             this.btn20.Name = "btn20";
             this.btn20.Size = new System.Drawing.Size(59, 58);
@@ -795,7 +795,7 @@ namespace Chess_Application
             // btn22
             // 
             this.btn22.BackColor = System.Drawing.Color.Black;
-            this.btn22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn22.Location = new System.Drawing.Point(121, 121);
             this.btn22.Name = "btn22";
             this.btn22.Size = new System.Drawing.Size(59, 58);
@@ -817,7 +817,7 @@ namespace Chess_Application
             // btn24
             // 
             this.btn24.BackColor = System.Drawing.Color.Black;
-            this.btn24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn24.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn24.Location = new System.Drawing.Point(241, 121);
             this.btn24.Name = "btn24";
             this.btn24.Size = new System.Drawing.Size(59, 58);
@@ -839,7 +839,7 @@ namespace Chess_Application
             // btn26
             // 
             this.btn26.BackColor = System.Drawing.Color.Black;
-            this.btn26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn26.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn26.Location = new System.Drawing.Point(361, 121);
             this.btn26.Name = "btn26";
             this.btn26.Size = new System.Drawing.Size(59, 58);
@@ -881,7 +881,7 @@ namespace Chess_Application
             // btn35
             // 
             this.btn35.BackColor = System.Drawing.Color.Black;
-            this.btn35.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn35.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn35.Location = new System.Drawing.Point(301, 181);
             this.btn35.Name = "btn35";
             this.btn35.Size = new System.Drawing.Size(59, 58);
@@ -904,7 +904,7 @@ namespace Chess_Application
             // btn33
             // 
             this.btn33.BackColor = System.Drawing.Color.Black;
-            this.btn33.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn33.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn33.Location = new System.Drawing.Point(181, 181);
             this.btn33.Name = "btn33";
             this.btn33.Size = new System.Drawing.Size(59, 58);
@@ -926,7 +926,7 @@ namespace Chess_Application
             // btn31
             // 
             this.btn31.BackColor = System.Drawing.Color.Black;
-            this.btn31.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn31.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn31.Location = new System.Drawing.Point(61, 181);
             this.btn31.Name = "btn31";
             this.btn31.Size = new System.Drawing.Size(59, 58);
@@ -938,7 +938,7 @@ namespace Chess_Application
             // btn37
             // 
             this.btn37.BackColor = System.Drawing.Color.Black;
-            this.btn37.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn37.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn37.Location = new System.Drawing.Point(421, 181);
             this.btn37.Name = "btn37";
             this.btn37.Size = new System.Drawing.Size(59, 58);
@@ -951,7 +951,7 @@ namespace Chess_Application
             // btn40
             // 
             this.btn40.BackColor = System.Drawing.Color.Black;
-            this.btn40.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn40.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn40.Location = new System.Drawing.Point(1, 241);
             this.btn40.Name = "btn40";
             this.btn40.Size = new System.Drawing.Size(59, 58);
@@ -973,12 +973,12 @@ namespace Chess_Application
             // btn42
             // 
             this.btn42.BackColor = System.Drawing.Color.Black;
-            this.btn42.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn42.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn42.Location = new System.Drawing.Point(121, 241);
             this.btn42.Name = "btn42";
             this.btn42.Size = new System.Drawing.Size(59, 58);
             this.btn42.TabIndex = 32;
-            this.btn42.Tag = "35";
+            this.btn42.Tag = "34";
             this.btn42.UseVisualStyleBackColor = false;
             this.btn42.Click += new System.EventHandler(this.TileClick);
             // 
@@ -995,7 +995,7 @@ namespace Chess_Application
             // btn44
             // 
             this.btn44.BackColor = System.Drawing.Color.Black;
-            this.btn44.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn44.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn44.Location = new System.Drawing.Point(241, 241);
             this.btn44.Name = "btn44";
             this.btn44.Size = new System.Drawing.Size(59, 58);
@@ -1017,7 +1017,7 @@ namespace Chess_Application
             // btn46
             // 
             this.btn46.BackColor = System.Drawing.Color.Black;
-            this.btn46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn46.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn46.Location = new System.Drawing.Point(361, 241);
             this.btn46.Name = "btn46";
             this.btn46.Size = new System.Drawing.Size(59, 58);
@@ -1039,7 +1039,7 @@ namespace Chess_Application
             // btn57
             // 
             this.btn57.BackColor = System.Drawing.Color.Black;
-            this.btn57.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn57.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn57.Location = new System.Drawing.Point(421, 301);
             this.btn57.Name = "btn57";
             this.btn57.Size = new System.Drawing.Size(59, 58);
@@ -1061,7 +1061,7 @@ namespace Chess_Application
             // btn55
             // 
             this.btn55.BackColor = System.Drawing.Color.Black;
-            this.btn55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn55.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn55.Location = new System.Drawing.Point(301, 301);
             this.btn55.Name = "btn55";
             this.btn55.Size = new System.Drawing.Size(59, 58);
@@ -1083,7 +1083,7 @@ namespace Chess_Application
             // btn53
             // 
             this.btn53.BackColor = System.Drawing.Color.Black;
-            this.btn53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn53.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn53.Location = new System.Drawing.Point(181, 301);
             this.btn53.Name = "btn53";
             this.btn53.Size = new System.Drawing.Size(59, 58);
@@ -1105,7 +1105,7 @@ namespace Chess_Application
             // btn51
             // 
             this.btn51.BackColor = System.Drawing.Color.Black;
-            this.btn51.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn51.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn51.Location = new System.Drawing.Point(61, 301);
             this.btn51.Name = "btn51";
             this.btn51.Size = new System.Drawing.Size(59, 58);
@@ -1127,7 +1127,7 @@ namespace Chess_Application
             // btn73
             // 
             this.btn73.BackColor = System.Drawing.Color.Black;
-            this.btn73.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn73.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn73.Image = ((System.Drawing.Image)(resources.GetObject("btn73.Image")));
             this.btn73.Location = new System.Drawing.Point(181, 421);
             this.btn73.Name = "btn73";
@@ -1164,7 +1164,7 @@ namespace Chess_Application
             // btn75
             // 
             this.btn75.BackColor = System.Drawing.Color.Black;
-            this.btn75.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn75.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn75.Image = ((System.Drawing.Image)(resources.GetObject("btn75.Image")));
             this.btn75.Location = new System.Drawing.Point(301, 421);
             this.btn75.Name = "btn75";
@@ -1189,7 +1189,7 @@ namespace Chess_Application
             // btn71
             // 
             this.btn71.BackColor = System.Drawing.Color.Black;
-            this.btn71.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn71.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn71.Image = ((System.Drawing.Image)(resources.GetObject("btn71.Image")));
             this.btn71.Location = new System.Drawing.Point(61, 421);
             this.btn71.Name = "btn71";
@@ -1202,7 +1202,7 @@ namespace Chess_Application
             // btn77
             // 
             this.btn77.BackColor = System.Drawing.Color.Black;
-            this.btn77.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn77.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn77.Image = ((System.Drawing.Image)(resources.GetObject("btn77.Image")));
             this.btn77.Location = new System.Drawing.Point(421, 421);
             this.btn77.Name = "btn77";
@@ -1241,7 +1241,7 @@ namespace Chess_Application
             // 
             this.btn66.BackColor = System.Drawing.Color.Black;
             this.btn66.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn66.BackgroundImage")));
-            this.btn66.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn66.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn66.Image = ((System.Drawing.Image)(resources.GetObject("btn66.Image")));
             this.btn66.Location = new System.Drawing.Point(361, 361);
             this.btn66.Name = "btn66";
@@ -1268,7 +1268,7 @@ namespace Chess_Application
             // 
             this.btn64.BackColor = System.Drawing.Color.Black;
             this.btn64.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn64.BackgroundImage")));
-            this.btn64.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn64.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn64.Image = ((System.Drawing.Image)(resources.GetObject("btn64.Image")));
             this.btn64.Location = new System.Drawing.Point(241, 361);
             this.btn64.Name = "btn64";
@@ -1295,7 +1295,7 @@ namespace Chess_Application
             // 
             this.btn62.BackColor = System.Drawing.Color.Black;
             this.btn62.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn62.BackgroundImage")));
-            this.btn62.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn62.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn62.Image = ((System.Drawing.Image)(resources.GetObject("btn62.Image")));
             this.btn62.Location = new System.Drawing.Point(121, 361);
             this.btn62.Name = "btn62";
@@ -1322,7 +1322,7 @@ namespace Chess_Application
             // btn60
             // 
             this.btn60.BackColor = System.Drawing.Color.Black;
-            this.btn60.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn60.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn60.Image = ((System.Drawing.Image)(resources.GetObject("btn60.Image")));
             this.btn60.Location = new System.Drawing.Point(1, 361);
             this.btn60.Name = "btn60";
@@ -1337,8 +1337,8 @@ namespace Chess_Application
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(479, 479);
-            this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlChessBoard);
+            this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlLogin);
             this.Controls.Add(this.pnlNewUser);
             this.Controls.Add(this.pnlStatistics);

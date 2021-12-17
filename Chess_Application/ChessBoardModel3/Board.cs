@@ -893,7 +893,6 @@ namespace ChessBoardModel3
                         else if (field == 7)
                         {
                             //Travel in Records
-
                             theGrid[SquareNum - 7].LegalNextMove = true;
                             theGrid[SquareNum - 6].LegalNextMove = true;
                             theGrid[SquareNum - 1].LegalNextMove = true;
@@ -1042,19 +1041,30 @@ namespace ChessBoardModel3
                     break;
 
                 case "BP":
-
-                    if (SquareNum + 8 < 64)
+                    //Double Space Move
+                    if (SquareNum == 8 || SquareNum == 9 || SquareNum == 10 || SquareNum == 11 || SquareNum == 12 || SquareNum == 13 || SquareNum == 14 || SquareNum == 15)
                     {
+                        theGrid[SquareNum + 16].LegalNextMove = true; 
+                    }
+                    else if (SquareNum + 8 < 64)
+                    {
+
                         //Movement Upward
                         theGrid[SquareNum + 8].LegalNextMove = true;
                     }
                     break;
                 case "WP":
 
+   
                     if (SquareNum - 8 < 64)
                     {
                         //Movement Downward
-                        theGrid[SquareNum - 8].LegalNextMove = true;
+                        Console.WriteLine(theGrid[SquareNum + 8]);
+                        if (SquareNum + 8 < 64)
+                        {
+                            theGrid[SquareNum - 8].LegalNextMove = true;
+                        }
+                           
                     }
                     break;
 

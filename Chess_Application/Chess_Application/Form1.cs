@@ -1,4 +1,4 @@
-﻿//Gavin Ogren
+﻿//Gavin Ogreni nt 
 //12/6/2021
 //Chess board game
 
@@ -41,82 +41,77 @@ namespace Chess_Application
         }
         private void PrintBoard(Board GameBoard)
         {
-            //Displays board
-            for (int i = 0; i < 64; i++)
+
+            if (Move.Count == 2)
             {
-                if (Move.Count == 2)
+                //Creates new cell 
+                //Check for user Pressing a piece. 
+                int Move1 = Move[0];
+                int Move2 = Move[1];
+                Cell PieceCell = GameBoard.theGrid[Move1];
+                Cell EmptyCell = GameBoard.theGrid[Move2];
+                Move.Clear();
+                
+                //If square is empty it will do a recursuion call
+                if (PieceCell.Piece == "E")
                 {
-                    //Creates new cell 
-
-                    //Check for user Pressing a piece. 
-                    Cell PieceCell = GameBoard.theGrid[Move[0]];
-                    Cell EmptyCell = GameBoard.theGrid[Move[1]];
-
-                    //If square is empty it will do a recursuion call
-                    if (PieceCell.Piece == "E")
-                    {
-                        PrintBoard(GameBoard);
-                    }
-                    //Make sure that user does select a empty space
-                    if (EmptyCell.Piece != "E")
-                    {
-                        Move.Clear(); 
-                        MessageBox.Show("Error", "Illegal Move");
-                        PrintBoard(GameBoard);
-                    }
-
-                    //Catches out of range exception. 
-                    try
-                    {
-                        GameBoard.LegalMove(PieceCell.Piece, Move[0]);
-                    }
-                    catch (Exception e)
-                    {
-                        Move.Clear(); 
-                        PrintBoard(GameBoard); 
-                    }
-
-                    if (EmptyCell.LegalNextMove == true)
-                    {
-
-                        EmptyCell.Piece = $"{PieceCell.Piece}";
-
-                        Image piece = null;
-                        //Pices throw exception 
-                        foreach (Button btn in pnlChessBoard.Controls)
-                        {
-                            if (Convert.ToInt32(btn.Tag) == Move[0])
-                            {
-                                piece = btn.Image;
-                                btn.Image = null;
-                            }
-                        }
-                        foreach (Button btn in pnlChessBoard.Controls)
-                        {
-                            if (Convert.ToInt32(btn.Tag) == Move[1])
-                            {
-                                btn.Image = piece;
-                            }
-                        }
-                        PieceCell.Piece = "E";
-                        PrintBoard(GameBoard);
-                    }
-                    else
-                    {
-                        //If its a illeegal move
-                        Move.Clear();
-                        MessageBox.Show("Error", "Illegal Move");
-                        PrintBoard(GameBoard);
-                    }
+                    PrintBoard(GameBoard);
                 }
-                else if (Move.Count == 1)
+                //Make sure that user does select a empty space
+                if (EmptyCell.Piece != "E")
+                {
+                    MessageBox.Show("Error: Select Empty Space", "Illegal Move", MessageBoxButtons.OK);
+                    PrintBoard(GameBoard);
+                }
+
+                //Catches out of range exception. 
+                try
+                {
+                    GameBoard.LegalMove(PieceCell.Piece, Move1);
+                }
+                catch (Exception e)
+                {
+                    PrintBoard(GameBoard);
+                }
+                if (EmptyCell.LegalNextMove == true)
                 {
 
+                    EmptyCell.Piece = $"{PieceCell.Piece}";
+
+                    Image piece = null;
+                    //Pices throw exception 
+                    foreach (Button btn in pnlChessBoard.Controls)
+                    {
+                        if (Convert.ToInt32(btn.Tag) == Move1)
+                        {
+                            piece = btn.Image;
+                            btn.Image = null;
+                        }
+                    }
+                    foreach (Button btn in pnlChessBoard.Controls)
+                    {
+                        if (Convert.ToInt32(btn.Tag) == Move2)
+                        {
+                            btn.Image = piece;
+                        }
+                    }
+                    PieceCell.Piece = "E";
+                    PrintBoard(GameBoard);
                 }
                 else
                 {
-                    Move.Clear(); 
+                    //If its a illeegal move
+                    MessageBox.Show("Error: Piece cannot do Move", "Illegal Move");
+                    PrintBoard(GameBoard);
                 }
+            }
+            else if (Move.Count == 1)
+            {
+
+            }
+            else
+            {
+                Move.Clear();
             }
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -192,9 +187,12 @@ namespace Chess_Application
         private void TileClick(object sender, EventArgs e)
         {
             int tile = Convert.ToInt32((sender as Button).Tag);
-            Move.Add(tile);
-            PrintBoard(GameBoard);
+            Console.WriteLine(tile);
             Console.WriteLine("Title Click");
+            Move.Add(tile);
+            if (Move.Count == 2)  
+            PrintBoard(GameBoard);
+           
         }
 
         private void btnSecondPlayer_Click(object sender, EventArgs e)
