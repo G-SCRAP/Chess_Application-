@@ -50,6 +50,8 @@ namespace Chess_Application
                 int Move2 = Move[1];
                 Cell PieceCell = GameBoard.theGrid[Move1];
                 Cell EmptyCell = GameBoard.theGrid[Move2];
+
+                //Move is made clear
                 Move.Clear();
                 
                 //If square is empty it will do a recursuion call

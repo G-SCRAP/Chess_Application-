@@ -707,12 +707,13 @@ namespace ChessBoardModel3
                         {
                             //Travel in Records
                             theGrid[SquareNum - 1].LegalNextMove = true;
+                            theGrid[SquareNum - 2].LegalNextMove = true;
                             theGrid[SquareNum + 1].LegalNextMove = true;
                             theGrid[SquareNum + 2].LegalNextMove = true;
                             theGrid[SquareNum + 3].LegalNextMove = true;
                             theGrid[SquareNum + 4].LegalNextMove = true;
                             theGrid[SquareNum + 5].LegalNextMove = true;
-                            theGrid[SquareNum - 2].LegalNextMove = true;
+                          
 
                             //Travels through fields
                             if (SquareNum + 8 < 64)
@@ -745,12 +746,14 @@ namespace ChessBoardModel3
                         {
                             //Travel in Records
                             theGrid[SquareNum - 1].LegalNextMove = true;
+                            theGrid[SquareNum - 2].LegalNextMove = true;
+                            theGrid[SquareNum - 3].LegalNextMove = true;
                             theGrid[SquareNum + 1].LegalNextMove = true;
                             theGrid[SquareNum + 2].LegalNextMove = true;
                             theGrid[SquareNum + 3].LegalNextMove = true;
                             theGrid[SquareNum + 4].LegalNextMove = true;
-                            theGrid[SquareNum - 3].LegalNextMove = true;
-                            theGrid[SquareNum - 2].LegalNextMove = true;
+                           
+                           
 
                             //Travels through fields
                             if (SquareNum + 8 < 64)
@@ -782,12 +785,15 @@ namespace ChessBoardModel3
                         {
                             //Travel in Records
                             theGrid[SquareNum - 1].LegalNextMove = true;
+                            theGrid[SquareNum - 2].LegalNextMove = true;
+                            theGrid[SquareNum - 3].LegalNextMove = true;
+                            theGrid[SquareNum - 4].LegalNextMove = true;
                             theGrid[SquareNum + 1].LegalNextMove = true;
                             theGrid[SquareNum + 2].LegalNextMove = true;
                             theGrid[SquareNum + 3].LegalNextMove = true;
-                            theGrid[SquareNum - 4].LegalNextMove = true;
-                            theGrid[SquareNum - 3].LegalNextMove = true;
-                            theGrid[SquareNum - 2].LegalNextMove = true;
+                          
+                           
+                           
 
                             //Travels through fields
                             if (SquareNum + 8 < 64)
@@ -1055,12 +1061,6 @@ namespace ChessBoardModel3
                     break;
                 case "WP":
 
-                    if (SquareNum == 47 || SquareNum == 48 || SquareNum == 49 || SquareNum == 50 || SquareNum == 51 || SquareNum == 52 || SquareNum == 53 || SquareNum == 54 || SquareNum == 55 || SquareNum == 56)
-                    {
-                        theGrid[SquareNum - 16].LegalNextMove = true;
-                    }
-
-   
                     if (SquareNum - 8 < 64)
                     {
                         //Movement Downward
@@ -1069,7 +1069,12 @@ namespace ChessBoardModel3
                         {
                             theGrid[SquareNum - 8].LegalNextMove = true;
                         }
-                           
+
+                        if (SquareNum == 47 || SquareNum == 48 || SquareNum == 49 || SquareNum == 50 || SquareNum == 51 || SquareNum == 52 || SquareNum == 53 || SquareNum == 54 || SquareNum == 55 || SquareNum == 56)
+                        {
+                            theGrid[SquareNum - 16].LegalNextMove = true;
+                        }
+
                     }
                     break;
 
